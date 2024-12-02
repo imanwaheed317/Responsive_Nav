@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React, { useState } from 'react' 
 
 const Navbar = () => {
@@ -14,19 +15,19 @@ const toggleNavbar = () => {
     <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
       <div className='flex items-center justify-between h-16'>
         <div className='flex items-center'>
-          <a href='#' className='text-3xl font-bold text-white'>IMAN WAHEED</a>
+          <Link href='#' className='text-3xl font-bold text-white'>IMAN WAHEED</Link>
        
       </div>
       <div className='hidden md:block'>
         <div className='text-2xl ml-3 flex items-center space-x-8'>
-          <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
-          Home</a>
-          <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
-          About</a>
-          <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
-          Services</a>
-          <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
-          Contact</a>
+          <Link href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
+          Home</Link>
+          <Link href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
+          About</Link>
+          <Link href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
+          Services</Link>
+          <Link href="/" className='text-white hover:bg-white hover:text-black rounded-lg'>
+          Contact</Link>
         </div>
       </div>
       <div className='md:hidden flex items-center'>
@@ -71,18 +72,18 @@ const toggleNavbar = () => {
     {isClick && (
   <div className="md:hidden">
     <div className="space-y-2 text-center text-2xl text-white">
-      <a href="/" className="block hover:bg-gray-700 py-2">
+      <Link href="/" className="block hover:bg-gray-700 py-2">
         Home
-      </a>
-      <a href="/" className="block hover:bg-gray-700 py-2">
+      </Link>
+      <Link href="/" className="block hover:bg-gray-700 py-2">
         About
-      </a>
-      <a href="/" className="block hover:bg-gray-700 py-2">
+      </Link>
+      <Link href="/" className="block hover:bg-gray-700 py-2">
         Services
-      </a>
-      <a href="/" className="block hover:bg-gray-700 py-2">
+      </Link>
+      <Link href="/" className="block hover:bg-gray-700 py-2">
         Contact
-      </a>
+      </Link>
     </div>
   </div>
 )}
